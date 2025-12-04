@@ -11,7 +11,6 @@ def test_products_returns_200():
         url,
         json=[{"id": 1, "title": "Fake product"}],
         status=200,
-        headers={"Content-Type": "application/json"},
     )
 
     response = requests.get(url, timeout=10)
